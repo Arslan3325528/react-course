@@ -22,6 +22,7 @@ import React from 'react'; //! 1 - React-елементи
 import ReactDOM from 'react-dom/client'; //! 2 - Render React-елемента
 import paintings from './paintings.json' //! 6.1 - Компонент `Painting`
 import planes from './planes.json'
+import App from './App'; //! 6.5.1 Створюємо Головний компонент всього застосунку - App.js
 
 //! 1 - React-елементи
 // const element = React.createElement("div");
@@ -222,38 +223,47 @@ let data = {
 
 
 //! 6.4 КОМПОНЕНТ - функція з даними на вході та розміткою на виході
-//? ❗️❗️❗️ Ім'я функції має бути ОБОВ'ЯЗКОВО з Великої літери ❗️❗️❗️
-function Painting(props) {
-// function Painting({ url, title, author, profileUrl, price }) {
-  console.log("props:", props);
-  const { url, title, author, profileUrl, price } = props;
-  return <div>
-    <img src={url} alt={title} width="480" />
-    <h2>{title}</h2>
-    <p>Автор: <a href={profileUrl}>{author}</a></p>
-    <p>Цена: {price} кредитов</p>
-    <p>Доступность: заканчивается или есть в наличии</p>
-    <button type="button">Добавить в корзину</button>
-  </div>
-};
+// //? ❗️❗️❗️ Ім'я функції має бути ОБОВ'ЯЗКОВО з Великої літери ❗️❗️❗️
+// function Painting(props) {
+// // function Painting({ url, title, author, profileUrl, price }) {
+//   console.log("props:", props);
+//   const { url, title, author, profileUrl, price } = props;
+//   return <div>
+//     <img src={url} alt={title} width="480" />
+//     <h2>{title}</h2>
+//     <p>Автор: <a href={profileUrl}>{author}</a></p>
+//     <p>Цена: {price} кредитов</p>
+//     <p>Доступность: заканчивается или есть в наличии</p>
+//     <button type="button">Добавить в корзину</button>
+//   </div>
+// };
 
-painting = paintings[0];
-// painting = paintings[1];
-// painting = paintings[2];
+// painting = paintings[0];
+// // painting = paintings[1];
+// // painting = paintings[2];
 
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// // root.render(<Painting />);
+
+// // root.render(<Painting a="5" b="10" />);
+
+// root.render(<Painting a="5" b={10} />);
+
+// root.render(
+//   <Painting
+//     url={painting.url}
+//     title={painting.title}
+//     author={painting.author.tag}
+//     profileUrl={painting.author.url}
+//     price={painting.price}
+//   />);
+
+
+//! 6.5.1 Створюємо Головний компонент всього застосунку - App.js
 const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />); //todo: В index.js ми раендеримо тільки <App />❗️❗️❗️
 
-// root.render(<Painting />);
+//todo: А в середині компонента <App /> ми раендеримо все інше ❗️❗️❗️
 
-// root.render(<Painting a="5" b="10" />);
-
-root.render(<Painting a="5" b={10} />);
-
-root.render(
-  <Painting
-    url={painting.url}
-    title={painting.title}
-    author={painting.author.tag}
-    profileUrl={painting.author.url}
-    price={painting.price}
-  />);
+//! 6.5.2 Створюємо папку components і переносимо туди компонент Painting 
