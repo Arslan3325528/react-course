@@ -47,13 +47,14 @@ import ReactDOM from 'react-dom/client'; //! 2 - Render React-елемента
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(element);
 
+
 //! 3 - Render React-елементів
-const elem1 = React.createElement("span", { children: "Привет" });
-const elem2 = React.createElement("span", { children: "мир!" });
+// const elem1 = React.createElement("span", { children: "Привет" });
+// const elem2 = React.createElement("span", { children: "мир!" });
 
 //todo: Each child in a list should have a unique "key" prop
-// const elem1 = React.createElement("span", { key: 1, children: "Привет" });
-// const elem2 = React.createElement("span", { key: 2, children: "мир!" });
+const elem1 = React.createElement("span", { key: "elem-1", children: "Привет" });
+const elem2 = React.createElement("span", { key: "elem-2", children: "мир!" });
 
 const element = React.createElement("div", {
   a: 5,
