@@ -1,4 +1,13 @@
-export default function Painting({ url, title, author, profileUrl, price }) {
+import defaultImage from "./default.jpg" //! Дефолтне зображення
+
+export default function Painting({
+  url = defaultImage, //! Дефолтне зображення
+  title,
+  author = "не відомо",
+  profileUrl,
+  price
+})
+{
   // const { url, title, author, profileUrl, price } = props;
   return <div>
     <img src={url} alt={title} width="480" />
