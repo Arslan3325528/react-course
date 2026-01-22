@@ -43,30 +43,59 @@ import ReactDOM from 'react-dom/client'; //! 2 - Render React-елемента
 // console.log("element:", element);
 
 
-//! 2 - Render React-елемента
+//! 2 - Рендер одного React-елемента
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(element);
 
 
-//! 3 - Render React-елементів
+//! 3 - Рендер кількох React-елементів
 // const elem1 = React.createElement("span", { children: "Привет" });
 // const elem2 = React.createElement("span", { children: "мир!" });
 
-//todo: Each child in a list should have a unique "key" prop
-const elem1 = React.createElement("span", { key: "elem-1", children: "Привет" });
-const elem2 = React.createElement("span", { key: "elem-2", children: "мир!" });
+// //todo: Each child in a list should have a unique "key" prop
+// const elem1 = React.createElement("span", { key: "elem-1", children: "Привет" });
+// const elem2 = React.createElement("span", { key: "elem-2", children: "мир!" });
 
-const element = React.createElement("div", {
-  a: 5,
-  b: 10,
-  children: [elem1, " ", elem2]
-});
+// const element = React.createElement("div", {
+//   a: 5,
+//   b: 10,
+//   children: [elem1, " ", elem2]
+// });
+
+// console.log("element:", element);
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(element);
+
+
+//! 4 - Рендер JSX-елемента (XML-образний синтаксис)
+// const element = React.createElement("div", {
+//   a: 5,
+//   b: 10,
+//   children: "Привет мир!",
+// });
+
+// console.log("element:", element);
+
+// const jsxElement = <div>Привет мир</div>
+// console.log("jsxElement:", jsxElement);
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(element);
+
+
+//! 5 - Рендер Вкладених JSX-елементів 
+const elem1 = <span>Привет </span>;
+const elem2 = <span>мир!</span>;
+
+const element = (
+  <div>
+    {elem1}
+    {elem2}
+  </div>
+);
 
 console.log("element:", element);
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(element);
-
-
-//! 4 - JSX елементи
