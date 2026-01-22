@@ -151,24 +151,74 @@ let data = {
 };
 
 //! 6.2 - Компонент `Painting` з json
-data = paintings[0];
+// data = paintings[0];
 // data = paintings[1];
 // data = paintings[2];
 
 // data = planes[1];
 
-painting = (
+// painting = (
+//   <div>
+//     <img src={data.url} alt={data.title} width="480" />
+//     <h2>{data.title}</h2>
+//     <p>Автор: <a href={data.author.url}>{data.author.tag}</a></p>
+//     <p>Цена: {data.price} кредитов</p>
+//     <p>Доступность: заканчивается или есть в наличии</p>
+//     <button type="button">Добавить в корзину</button>
+//   </div>
+// );
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(painting);
+
+
+//! 6.3 - 3 Компонента `Painting` з json
+const data1 = paintings[0];
+const data2 = paintings[1];
+const data3 = paintings[2];
+
+// data = planes[1];
+
+const painting1 = (
   <div>
-    <img src={data.url} alt={data.title} width="480" />
-    <h2>{data.title}</h2>
-    <p>Автор: <a href={data.author.url}>{data.author.tag}</a></p>
-    <p>Цена: {data.price} кредитов</p>
+    <img src={data1.url} alt={data1.title} width="480" />
+    <h2>{data1.title}</h2>
+    <p>Автор: <a href={data1.author.url}>{data1.author.tag}</a></p>
+    <p>Цена: {data1.price} кредитов</p>
     <p>Доступность: заканчивается или есть в наличии</p>
     <button type="button">Добавить в корзину</button>
   </div>
 );
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(painting);
+const painting2 = (
+  <div>
+    <img src={data2.url} alt={data2.title} width="480" />
+    <h2>{data2.title}</h2>
+    <p>Автор: <a href={data2.author.url}>{data2.author.tag}</a></p>
+    <p>Цена: {data2.price} кредитов</p>
+    <p>Доступность: заканчивается или есть в наличии</p>
+    <button type="button">Добавить в корзину</button>
+  </div>
+);
 
+const painting3 = (
+  <div>
+    <img src={data3.url} alt={data3.title} width="480" />
+    <h2>{data3.title}</h2>
+    <p>Автор: <a href={data3.author.url}>{data3.author.tag}</a></p>
+    <p>Цена: {data3.price} кредитов</p>
+    <p>Доступность: заканчивается или есть в наличии</p>
+    <button type="button">Добавить в корзину</button>
+  </div>
+);
+const allPaintings = (
+  <div>
+    {painting1}
+    {painting2}
+    {painting3}
+  </div>
+)
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(allPaintings);
 
