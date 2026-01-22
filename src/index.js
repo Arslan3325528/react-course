@@ -85,17 +85,67 @@ import ReactDOM from 'react-dom/client'; //! 2 - Render React-елемента
 
 
 //! 5 - Рендер Вкладених JSX-елементів 
-const elem1 = <span>Привет </span>;
-const elem2 = <span>мир!</span>;
+// const elem1 = <span>Привет </span>;
+// const elem2 = <span>мир!</span>;
 
-const element = (
+// const element = (
+//   <div>
+//     {elem1}
+//     {elem2}
+//   </div>
+// );
+
+// console.log("element:", element);
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(element);
+
+
+//! 6.1 - Компонент `Painting`
+// * HTML-розмітка:
+// <div>
+//   <img src="" alt="" width="480" />
+//   <h2></h2>
+//   <p>Автор: <a href=""></a></p>
+//   <p>Цена: кредитов</p>
+//   <p>Доступность: заканчивается или есть в наличии</p>
+//   <button type="button">Добавить в корзину</button>
+// </div>
+
+//? у одиночних тегів повинен бути обов'язково закриваючий слеш
+let painting = (
   <div>
-    {elem1}
-    {elem2}
+    <img src="" alt="" width="480" />
+    <h2></h2>
+    <p>Автор: <a href=""></a></p>
+    <p>Цена: кредитов</p>
+    <p>Доступность: заканчивается или есть в наличии</p>
+    <button type="button">Добавить в корзину</button>
   </div>
 );
 
-console.log("element:", element);
+const data = {
+  "id": "id-1",
+  "url": "https://cdn.pixabay.com/photo/2017/07/31/22/05/feathers-2561511_1280.jpg",
+  "title": "Feathers. Art abstract",
+  "price": 500,
+  "author": {
+    "tag": "ractapopulous",
+    "url": "https://pixabay.com/users/ractapopulous-24766/"
+  },
+  "quantity": 10
+};
+
+painting = (
+  <div>
+    <img src={data.url} alt={data.title} width="480" />
+    <h2>{data.title}</h2>
+    <p>Автор: <a href={data.author.url}>{data.author.tag}</a></p>
+    <p>Цена: {data.price} кредитов</p>
+    <p>Доступность: заканчивается или есть в наличии</p>
+    <button type="button">Добавить в корзину</button>
+  </div>
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(element);
+root.render(painting);
