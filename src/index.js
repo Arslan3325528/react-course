@@ -67,3 +67,6 @@ console.log("element:", element);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(element);
+
+
+//! 4 - JSX елементи
