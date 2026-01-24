@@ -1,12 +1,21 @@
 [
-  { 
+  {
     "id": "id-1",
-    "url": "https://lh3.googleusercontent.com/pw/AP1GczNs6n74d0t3SgOMv9k5_PsOazCTuNdWwWJw3DA34U2Of-Uua4S3EItO-W0ChLissOAyto7UkYnq20Co_6q-8gjdhL_Cyea1ErpxtOCu8DR7Ea4AFIcJot1Uz3gK2jmuNgWhcjeR0NLgpDxagwu9MmZ8=w924-h727-s-no-gm?authuser=0",
-    "title": "A-10",
-    "price": 500,
-    "author": {
-      "tag": "ractapopulous",
-      "url": "https://pixabay.com/users/ractapopulous-24766/"
+    "url": {
+      "main": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/USAF_A-10_Thunderbolt_II_after_taking_on_fuel_over_Afghanistan.jpg/2560px-USAF_A-10_Thunderbolt_II_after_taking_on_fuel_over_Afghanistan.jpg",
+      "model": "https://lh3.googleusercontent.com/pw/AP1GczNs6n74d0t3SgOMv9k5_PsOazCTuNdWwWJw3DA34U2Of-Uua4S3EItO-W0ChLissOAyto7UkYnq20Co_6q-8gjdhL_Cyea1ErpxtOCu8DR7Ea4AFIcJot1Uz3gK2jmuNgWhcjeR0NLgpDxagwu9MmZ8=w924-h727-s-no-gm?authuser=0"
+    },
+    "название": {
+      "краткое": "A-10",
+      "полное": "Fairchild-Republic A-10 Thunderbolt II",
+      "прозвище": "Warthog («Бородавочник»)"
+    },
+    "информация": {
+      "год создания": 1976,
+      "страна производитель": "США",
+      "тип": "штурмовик",
+      "price": "$18,8 млн",
+      "о создании": "американский одноместный двухдвигательный штурмовик, предназначенный для оказания непосредственной поддержки сухопутных войск, поражения танков, бронемашин и других наземных целей"
     },
     "quantity": 10
   },
