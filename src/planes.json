@@ -19,27 +19,5 @@
       "description": "Американский одноместный двухдвигательный штурмовик, предназначенный для оказания непосредственной поддержки сухопутных войск, поражения танков, бронемашин и других наземных целей"
     },
     "quantity": 10
-  },
-  {
-    "id": "id-2",
-    "url": "https://lh3.googleusercontent.com/pw/AP1GczNGlg1WrUIrHaldyLzqhtpjcd3ivMq-MuGEBPsz_qYczTWm_l8wJ8eas5nAeRYk3zZs7EzT1tiJa0SnBfFNcM6Lk4C7P1PnyDxBxhVZ0cBBZ3EeB1_NkGx5ntFsODL3iAM6k21UtFPMsax9xWPyh3WI=w938-h950-s-no-gm?authuser=0",
-    "title": "AN-24",
-    "price": 400,
-    "author": {
-      "tag": "ractapopulous",
-      "url": "https://pixabay.com/users/ractapopulous-24766/"
-    },
-    "quantity": 15
-  },
-  {
-    "id": "id-3",
-    "url": "https://lh3.googleusercontent.com/pw/AP1GczPlOJa_nz3Ch08sMU0GWfU3ZsRJsitvgpvb1tBucxFF2I7J89X1JhWGP-7BwF_LdZHkk2kbWWx8msIXr4YId3DiOkbmnLI91WJik0QPR5VmE0QoV1sY8HrOQztzLhCxVro3bA9kO-PGzA0Vt0iOUHIZ=w848-h847-s-no-gm?authuser=0",
-    "title": "B-2",
-    "price": 600,
-    "author": {
-      "tag": "ractapopulous",
-      "url": "https://pixabay.com/users/ractapopulous-24766/"
-    },
-    "quantity": 5
   }
 ]
