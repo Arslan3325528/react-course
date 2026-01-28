@@ -25,10 +25,10 @@ export default function Planes({
     <p>Рік випуску: {year}</p>
     <p>Ціна: {price}</p>
     <p>Опис: {description}</p>
-    <p>Модель:</p>
-    <img src={urlPromotional} alt={nameBrief} width="600" />
-    <br />
-    <img src={urlActual} alt={nameBrief} width="300" />
+    <p>Рекламна модель:</p>
+    <img src={urlPromotional} alt={nameBrief} width="300" />
+    <p>Реальна модель:</p>
+    <img src={urlActual} alt={nameBrief} width="600" />
     <br />
     <button type="button">Додати до кошику</button>
   </div>

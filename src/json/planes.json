@@ -9,14 +9,14 @@
     "name": {
       "brief": "A-10",
       "full": "Fairchild-Republic A-10 Thunderbolt II",
-      "nickname": "Warthog («Бородавочник»)"
+      "nickname": "Бородавочник («Warthog»)"
     },
     "info": {
       "year": 1976,
       "country": "США",
       "type": "Штурмовик",
       "price": "$18,8 млн",
-      "description": "Американський одномісний дводвигуновий штурмовик, призначений для надання безпосередньої підтримки сухопутних військ, ураження танків, бронемашин та інших наземних цілей"
+      "description": "Одномісний дводвигуновий штурмовик, призначений для надання безпосередньої підтримки сухопутних військ, ураження танків, бронемашин та інших наземних цілей"
     }
   },
   {
@@ -29,14 +29,34 @@
     "name": {
       "brief": "B-2",
       "full": "B-2 Spirit",
-      "nickname": "«Літаюче крило»"
+      "nickname": "Дух («Spirit»)"
     },
     "info": {
       "year": 1989,
       "country": "США",
-      "type": "Стратегічний бомбардувальник.",
+      "type": "Стратегічний бомбардувальник",
       "price": "$2,1 млрд",
       "description": "Перший сучасний важкий літак зі схемою «літаюче крило», призначений для прориву щільної протиповітряної оборони (ППО) та доставки звичайної або ядерної зброї"
+    }
+  },
+  {
+    "id": "id-3",
+    "url": {
+      "main": "https://upload.wikimedia.org/wikipedia/commons/1/1e/F-22_Raptor_edit1_%28cropped%29.jpg",
+      "promotional": "https://lh3.googleusercontent.com/pw/AP1GczMW9bQPJS-5H0JL5TtRZ7ZEpl1nxf8P1-KGsHff6BkWUFMO7vxLBrhlhQdbNDZQJl7W0lrUZtUf_RSSU6bNhQPTQ7W2qntlaabchF_RK2BZKKbygFUKP8KmlP6Q2yn8RCVQhmB0emkPoilDP5sRqre7=w944-h911-s-no-gm?authuser=0",
+      "actual": "../images/planes-actual/f-22-comp.jpg"
+    },
+    "name": {
+      "brief": "F-22",
+      "full": "Lockheed Martin F-22 «Raptor»",
+      "nickname": "Хижий птах («Raptor»)"
+    },
+    "info": {
+      "year": 2001,
+      "country": "США",
+      "type": "Багатоцільовий винищувач",
+      "price": "$143–180 млн",
+      "description": "Малопомітний багатоцільовий винищувач «п'ятого покоління», розроблений для боротьби з авіацією супротивника, прикриття військ та тилових об'єктів від ударів з повітря, протидії повітряній розвідці супротивника вдень та вночі, у простих та складних метеоумовах"
     }
   }
 ]
