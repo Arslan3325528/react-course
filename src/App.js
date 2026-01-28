@@ -67,7 +67,7 @@ export default function App() {
   );
 };
 
-
+//? Paintings
 //todo: var.2
 // export default function App() {
 //   return (
