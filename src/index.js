@@ -30,20 +30,20 @@ import App from './App'; //! 6.5.1 Створюємо Головний комп�
 //! 1 - React-елементи
 // const element = React.createElement("div");
 
-// const element = React.createElement("div", { a: 5, b: 10 }, "Привет мир!");
+// const element = React.createElement("div", { a: 5, b: 10 }, "Привіт  світ!");
 
 // const element = React.createElement(
 //   "div",
 //   { a: 5, b: 10 },
-//   "Привет",
+//   "Привіт ",
 //   " ",
-//   "мир!"
+//   "світ!"
 // );
 
 // const element = React.createElement("div", {
 //   a: 5,
 //   b: 10,
-//   children: ["Привет", " ", "мир!"]
+//   children: ["Привіт ", " ", "світ!"]
 // });
 
 // console.log("element:", element);
@@ -55,12 +55,12 @@ import App from './App'; //! 6.5.1 Створюємо Головний комп�
 
 
 //! 3 - Рендер кількох React-елементів
-// const elem1 = React.createElement("span", { children: "Привет" });
-// const elem2 = React.createElement("span", { children: "мир!" });
+// const elem1 = React.createElement("span", { children: "Привіт " });
+// const elem2 = React.createElement("span", { children: "світ!" });
 
 // //todo: Each child in a list should have a unique "key" prop
-// const elem1 = React.createElement("span", { key: "elem-1", children: "Привет" });
-// const elem2 = React.createElement("span", { key: "elem-2", children: "мир!" });
+// const elem1 = React.createElement("span", { key: "elem-1", children: "Привіт " });
+// const elem2 = React.createElement("span", { key: "elem-2", children: "світ!" });
 
 // const element = React.createElement("div", {
 //   a: 5,
@@ -78,12 +78,12 @@ import App from './App'; //! 6.5.1 Створюємо Головний комп�
 // const element = React.createElement("div", {
 //   a: 5,
 //   b: 10,
-//   children: "Привет мир!",
+//   children: "Привіт  світ!",
 // });
 
 // console.log("element:", element);
 
-// const jsxElement = <div>Привет мир</div>
+// const jsxElement = <div>Привіт  світ</div>
 // console.log("jsxElement:", jsxElement);
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -91,8 +91,8 @@ import App from './App'; //! 6.5.1 Створюємо Головний комп�
 
 
 //! 5 - Рендер Вкладених JSX-елементів (інтерполяція)
-// const elem1 = <span>Привет </span>;
-// const elem2 = <span>мир!</span>;
+// const elem1 = <span>Привіт  </span>;
+// const elem2 = <span>світ!</span>;
 
 // const element = (
 //   <div>
