@@ -22,7 +22,10 @@
 import ReactDOM from 'react-dom/client'; //! 2 - Render React-елемента
 // import paintings from './paintings.json' //! 6.1 - Компонент `Painting`
 // import planes from './planes.json'
+//? Paintings
 import App from './App'; //! 6.5.1 Створюємо Головний компонент всього застосунку - App.js
+//? Planes
+// import AppPlanes from './AppPlanes';
 
 //! 1 - React-елементи
 // const element = React.createElement("div");
@@ -262,7 +265,10 @@ let data = {
 
 //! 6.5.1 Створюємо Головний компонент всього застосунку - App.js
 const root = ReactDOM.createRoot(document.getElementById('root'));
+//? Paintings
 root.render(<App />); //todo: В index.js ми раендеримо тільки <App />❗️❗️❗️
+//? Planes
+// root.render(<AppPlanes />);
 
 //todo: А в середині компонента <App /> ми раендеримо все інше ❗️❗️❗️
 
