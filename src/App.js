@@ -31,12 +31,18 @@ import paintings from './json/paintings.json';
 // console.log("Painting:", Painting);
 // console.log("paintings:", paintings);
 
+//? Planes
+import Planes from "./components/Planes";
+import planes from './json/planes.json';
+// console.log("Planes:", Planes);
+// console.log("planes:", planes);
 
-//? Paintings
+
 //todo: var.1
 export default function App() {
   return (
     <div>
+      {/* //? Paintings */}
       <Painting
         // url={paintings[0].url}
         title={paintings[0].title}
@@ -45,7 +51,7 @@ export default function App() {
         price={paintings[0].price}
         quantity={paintings[0].quantity}
       />
-
+      {/* //? Paintings */}
       <Painting
         url={paintings[1].url}
         title={paintings[1].title}
@@ -54,7 +60,7 @@ export default function App() {
         price={paintings[1].price}
         quantity={paintings[1].quantity}
       />
-
+      {/* //? Paintings */}
       <Painting
         url={paintings[2].url}
         title={paintings[2].title}
@@ -63,6 +69,21 @@ export default function App() {
         price={paintings[2].price}
         quantity={paintings[2].quantity}
       />
+      {/* //? Planes */}
+      {/* <Planes
+        key={planes[1].id}
+        urlMain={planes[1].url.main}
+        urlPromotional={planes[1].url.promotional}
+        urlActual={planes[1].url.actual}
+        nameBrief={planes[1].name.brief}
+        nameFull={planes[1].name.full}
+        nickname={planes[1].name.nickname}
+        year={planes[1].info.year}
+        country={planes[1].info.country}
+        type={planes[1].info.type}
+        price={planes[1].info.price}
+        description={planes[1].info.description}
+      /> */}
     </div>
   );
 };
