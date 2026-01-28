@@ -1,9 +1,10 @@
 import defaultImage from "./default.jpg" //! Дефолтне зображення
 
+
 export default function Planes({
-  urlMain,
-  urlModel = defaultImage, //! Дефолтне зображення
-  urlTemplate,
+  urlMain = defaultImage, //! Дефолтне зображення
+  urlPromotional = defaultImage, //! Дефолтне зображення
+  urlActual,
   nameBrief,
   nameFull,
   nickname = "не відомо",
@@ -16,8 +17,7 @@ export default function Planes({
 {
   return <div>
     <h2>{nameBrief}</h2>
-    <img src={urlMain} alt={nameBrief} width="600" />
-    
+    <img src={urlMain} alt={nameBrief} width="400" />
     <p>Повна назва: {nameFull}</p>
     <p>Тип: {type}</p>
     <p>Прізвисько: {nickname}</p>
@@ -26,7 +26,9 @@ export default function Planes({
     <p>Ціна: {price}</p>
     <p>Опис: {description}</p>
     <p>Модель:</p>
-    <img src={urlModel} alt={nameBrief} />
+    <img src={urlPromotional} alt={nameBrief} width="600" />
+    <br />
+    <img src={urlActual} alt={nameBrief} width="300" />
     <br />
     <button type="button">Додати до кошику</button>
   </div>

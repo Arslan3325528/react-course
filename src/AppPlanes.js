@@ -1,7 +1,7 @@
 
 //? Planes
 import Planes from "./components/Planes";
-import planes from './planes.json';
+import planes from './json/planes.json';
 // console.log("Planes:", Planes);
 // console.log("planes:", planes);
 
@@ -50,8 +50,8 @@ export default function App() {
         <Planes
           key={plane.id}
           urlMain={plane.url.main}
-          urlModel={plane.url.model}
-          urlTemplate={plane.url.template}
+          urlPromotional={plane.url.promotional}
+          urlActual={plane.url.actual}
           nameBrief={plane.name.brief}
           nameFull={plane.name.full}
           nickname={plane.name.nickname}
