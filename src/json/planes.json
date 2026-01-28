@@ -14,7 +14,7 @@
     "info": {
       "year": 1976,
       "country": "США",
-      "type": "штурмовик",
+      "type": "Штурмовик",
       "price": "$18,8 млн",
       "description": "Американський одномісний дводвигуновий штурмовик, призначений для надання безпосередньої підтримки сухопутних військ, ураження танків, бронемашин та інших наземних цілей"
     }
@@ -22,21 +22,21 @@
   {
     "id": "id-2",
     "url": {
-      "main": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/USAF_A-10_Thunderbolt_II_after_taking_on_fuel_over_Afghanistan.jpg/2560px-USAF_A-10_Thunderbolt_II_after_taking_on_fuel_over_Afghanistan.jpg",
-      "promotional": "https://lh3.googleusercontent.com/pw/AP1GczNs6n74d0t3SgOMv9k5_PsOazCTuNdWwWJw3DA34U2Of-Uua4S3EItO-W0ChLissOAyto7UkYnq20Co_6q-8gjdhL_Cyea1ErpxtOCu8DR7Ea4AFIcJot1Uz3gK2jmuNgWhcjeR0NLgpDxagwu9MmZ8=w924-h727-s-no-gm?authuser=0",
-      "actual": "../images/planes-actual/a-10.jpg"
+      "main": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/US_Air_Force_B-2_Spirit.jpg/2560px-US_Air_Force_B-2_Spirit.jpg",
+      "promotional": "https://lh3.googleusercontent.com/pw/AP1GczPlOJa_nz3Ch08sMU0GWfU3ZsRJsitvgpvb1tBucxFF2I7J89X1JhWGP-7BwF_LdZHkk2kbWWx8msIXr4YId3DiOkbmnLI91WJik0QPR5VmE0QoV1sY8HrOQztzLhCxVro3bA9kO-PGzA0Vt0iOUHIZ=w848-h847-s-no-gm?authuser=0",
+      "actual": "../images/planes-actual/b-2-comp.jpg"
     },
     "name": {
-      "brief": "A-10",
-      "full": "Fairchild-Republic A-10 Thunderbolt II",
-      "nickname": "Warthog («Бородавочник»)"
+      "brief": "B-2",
+      "full": "B-2 Spirit",
+      "nickname": "«Літаюче крило»"
     },
     "info": {
-      "year": 1976,
+      "year": 1989,
       "country": "США",
-      "type": "штурмовик",
-      "price": "$18,8 млн",
-      "description": "Американський одномісний дводвигуновий штурмовик, призначений для надання безпосередньої підтримки сухопутних військ, ураження танків, бронемашин та інших наземних цілей"
+      "type": "Стратегічний бомбардувальник.",
+      "price": "$2,1 млрд",
+      "description": "Перший сучасний важкий літак зі схемою «літаюче крило», призначений для прориву щільної протиповітряної оборони (ППО) та доставки звичайної або ядерної зброї"
     }
   }
 ]
