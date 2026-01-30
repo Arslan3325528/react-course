@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/react-course/static/js/main.7d88e347.js",
+    "static/media/default.jpg": "/react-course/static/media/default.2e01288c0c1a3f24d743.jpg",
+    "index.html": "/react-course/index.html",
+    "main.7d88e347.js.map": "/react-course/static/js/main.7d88e347.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.7d88e347.js"
+  ]
+}
