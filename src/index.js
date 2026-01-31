@@ -17,13 +17,17 @@ import './index.css';
 // reportWebVitals();
 //todo ========================================================================
 
+// import { BrowserRouter } from 'react-router-dom';
+// import { HashRouter } from 'react-router-dom';
 
 // import React from 'react'; //! 1 - React-елементи
 import ReactDOM from 'react-dom/client'; //! 2 - Render React-елемента
-// import paintings from './paintings.json' //! 6.1 - Компонент `Painting`
-// import planes from './planes.json'
+// import paintings from './json/paintings.json' //! 6.1 - Компонент `Painting`
+// import planes from './json/planes.json'
+
+//! 6.5.1 Створюємо Головний компонент всього застосунку - App.js
 //? Paintings
-import App from './App'; //! 6.5.1 Створюємо Головний компонент всього застосунку - App.js
+import App from './App'; 
 //? Planes
 // import AppPlanes from './AppPlanes';
 
@@ -265,9 +269,23 @@ let data = {
 
 //! 6.5.1 Створюємо Головний компонент всього застосунку - App.js
 const root = ReactDOM.createRoot(document.getElementById('root'));
+//todo: В index.js ми раендеримо тільки <App />❗️❗️❗️
 //? Paintings
-root.render(<App />); //todo: В index.js ми раендеримо тільки <App />❗️❗️❗️
+//todo: var.1
+root.render(<App />);
+//todo: var.2
+// root.render(
+  // <BrowserRouter basename="/react-course">
+  //   <App />
+  // </BrowserRouter>
+  //todo: var.3
+  // <HashRouter>
+  //   <App />
+  // </HashRouter>
+// ); 
+
 //? Planes
+//todo: var.1
 // root.render(<AppPlanes />);
 
 //todo: А в середині компонента <App /> ми раендеримо все інше ❗️❗️❗️

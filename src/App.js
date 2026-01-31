@@ -37,6 +37,11 @@ import planes from './json/planes.json';
 // console.log("Planes:", Planes);
 // console.log("planes:", planes);
 
+//!💚 Для відображення локальних зображень з http://localhost:3001/react-course та https://arslan3325528.github.io/react-course/
+import img1 from './images/planes-actual/a-10.jpg';
+import img2 from './images/planes-actual/b-2-comp.jpg';
+import img3 from './images/planes-actual/f-22-comp.jpg';
+
 
 //todo: var.1
 export default function App() {
@@ -74,7 +79,8 @@ export default function App() {
         key={planes[1].id}
         urlMain={planes[1].url.main}
         urlPromotional={planes[1].url.promotional}
-        urlActual={planes[1].url.actual}
+        // urlActual={planes[1].url.actual}
+        urlActual={img2} //!💚 
         nameBrief={planes[1].name.brief}
         nameFull={planes[1].name.full}
         nickname={planes[1].name.nickname}
