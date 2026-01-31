@@ -9,7 +9,7 @@ export default function Painting({
 })
 {
   // const { url, title, author, profileUrl, price } = props;
-  return <div>
+  return <div className="Card-painting">
     <img src={url} alt={title} width="480" />
     <h2>{title}</h2>
     <p>Автор: <a href={profileUrl}>{author}</a></p>

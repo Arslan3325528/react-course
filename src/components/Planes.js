@@ -15,7 +15,7 @@ export default function Planes({
   description
 })
 {
-  return <div>
+  return <div className="Card-planes">
     <h2>{nameBrief}</h2>
     <img src={urlMain} alt={nameBrief} width="400" />
     <p>Повна назва: {nameFull}</p>
@@ -24,7 +24,7 @@ export default function Planes({
     <p>Країна виробник: {country}</p>
     <p>Рік випуску: {year}</p>
     <p>Ціна: {price}</p>
-    <p>Опис: {description}</p>
+    <p className="Card-planes-description">Опис: {description}</p>
     <p>Рекламна модель:</p>
     <img src={urlPromotional} alt={nameBrief} width="300" />
     <p>Реальна модель:</p>
