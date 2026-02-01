@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import defaultImage from "./default.jpg" //! Дефолтне зображення
 
 export default function Painting({
@@ -7,6 +8,7 @@ export default function Painting({
   profileUrl,
   price
 })
+// export default function Painting(props)
 {
   // const { url, title, author, profileUrl, price } = props;
   return <div className="Card-painting">
@@ -17,4 +19,15 @@ export default function Painting({
     <p>Доступность: заканчивается или есть в наличии</p>
     <button type="button">Додати до кошику</button>
   </div>
+};
+
+//! Контроль типу змінних - propTypes
+Painting.propTypes = {
+  url: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  profileUrl: PropTypes.string.isRequired,
+  // price: PropTypes.number.isRequired,
+  price: PropTypes.string.isRequired,
+  quantity: PropTypes.number.isRequired,
 };

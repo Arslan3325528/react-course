@@ -54,6 +54,7 @@ export default function App() {
         // author={paintings[0].author.tag}
         profileUrl={paintings[0].author.url}
         price={paintings[0].price}
+        // price="100" //! контроль propTypes
         quantity={paintings[0].quantity}
       />
       {/* //? Paintings */}
@@ -75,7 +76,7 @@ export default function App() {
         quantity={paintings[2].quantity}
       />
       {/* //? Planes */}
-      <Planes
+      {/* <Planes
         key={planes[1].id}
         urlMain={planes[1].url.main}
         urlPromotional={planes[1].url.promotional}
@@ -89,7 +90,7 @@ export default function App() {
         type={planes[1].info.type}
         price={planes[1].info.price}
         description={planes[1].info.description}
-      />
+      /> */}
     </div>
   );
 };

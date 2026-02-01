@@ -20,7 +20,7 @@ import './index.css';
 // import { BrowserRouter } from 'react-router-dom';
 // import { HashRouter } from 'react-router-dom';
 
-// import React from 'react'; //! 1 - React-елементи
+import React from 'react'; //! 1 - React-елементи
 import ReactDOM from 'react-dom/client'; //! 2 - Render React-елемента
 // import paintings from './json/paintings.json' //! 6.1 - Компонент `Painting`
 // import planes from './json/planes.json'
@@ -272,17 +272,20 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //todo: В index.js ми раендеримо тільки <App />❗️❗️❗️
 //? Paintings
 //todo: var.1
-root.render(<App />);
+// root.render(<App />);
 //todo: var.2
-// root.render(
-  // <BrowserRouter basename="/react-course">
-  //   <App />
-  // </BrowserRouter>
+root.render(
+  <React.StrictMode>
+    <App />
+  {/* <BrowserRouter basename="/react-course">
+    <App />
+  </BrowserRouter> */}
   //todo: var.3
-  // <HashRouter>
-  //   <App />
-  // </HashRouter>
-// ); 
+  {/* <HashRouter>
+    <App />
+  </HashRouter> */}
+  </React.StrictMode>
+); 
 
 //? Planes
 //todo: var.1

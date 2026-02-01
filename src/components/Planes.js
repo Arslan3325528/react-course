@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import defaultImage from "./default.jpg" //! Дефолтне зображення
 
 
