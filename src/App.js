@@ -45,6 +45,19 @@ import img3 from './images/planes-actual/f-22-comp.jpg';
 
 //todo: var.1
 export default function App() {
+  //! +++ Рендер за умовою:
+  // const isOnline = true;
+  const isOnline = false;
+  // return (<div>
+  //   {isOnline && "ONline"}
+  //   {isOnline ? "ONline" : "OFFline"}
+
+  //   {false}
+  //   {null}
+  //   {undefined}
+  // </div>
+  // );
+  //! ____________________
   return (
     <div>
       {/* //? Paintings */}
@@ -111,6 +124,46 @@ export default function App() {
 //           quantity={painting.quantity}
 //         />
 //       )}
+//     </div>
+//   );
+// };
+
+
+
+//! +++ Приклад рендеру за умовою:
+//todo: var.1
+// export default function App() {
+//   const isOnline = true; //? Painting
+//   // const isOnline = false; //? Planes
+//   return (
+//     <div>
+//       {isOnline
+//         ?
+//         < Painting
+//           url={paintings[0].url}
+//           title={paintings[0].title}
+//           author={paintings[0].author.tag}
+//           profileUrl={paintings[0].author.url}
+//           price={paintings[0].price}
+//           quantity={paintings[0].quantity}
+//         />
+//         :
+//         <Planes
+//           key={planes[1].id}
+//           urlMain={planes[1].url.main}
+//           urlPromotional={planes[1].url.promotional}
+//           // urlActual={planes[1].url.actual}
+//           urlActual={img2} //!💚 
+//           nameBrief={planes[1].name.brief}
+//           nameFull={planes[1].name.full}
+//           nickname={planes[1].name.nickname}
+//           year={planes[1].info.year}
+//           country={planes[1].info.country}
+//           type={planes[1].info.type}
+//           price={planes[1].info.price}
+//           description={planes[1].info.description}
+//         />
+//       }
 //     </div>
 //   );
 // };

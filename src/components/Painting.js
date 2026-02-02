@@ -1,13 +1,15 @@
 import PropTypes from 'prop-types';
 import defaultImage from "./default.jpg" //! Дефолтне зображення
 
-export default function Painting({
+// export default function Painting({
+const Painting = ({
   url = defaultImage, //! Дефолтне зображення
   title,
   author = "не відомо",
   profileUrl,
-  price
-})
+  price,
+  quantity
+}) =>
 // export default function Painting(props)
 {
   // const { url, title, author, profileUrl, price } = props; //! Деструктурізація
@@ -16,7 +18,8 @@ export default function Painting({
     <h2>{title}</h2>
     <p>Автор: <a href={profileUrl}>{author}</a></p>
     <p>Цена: {price} кредитов</p>
-    <p>Доступность: заканчивается или есть в наличии</p>
+    {/* <p>Доступность: заканчивается или есть в наличии</p> */}
+    <p>Доступность: {quantity < 10 ? "заканчивается" : "есть в наличии"}</p>
     <button type="button">Додати до кошику</button>
   </div>
 };
@@ -27,7 +30,9 @@ Painting.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   profileUrl: PropTypes.string.isRequired,
-  // price: PropTypes.number.isRequired,
-  price: PropTypes.string.isRequired, //! контроль propTypes
+  price: PropTypes.number.isRequired,
+  // price: PropTypes.string.isRequired, //! контроль propTypes
   quantity: PropTypes.number.isRequired,
 };
+
+export default Painting;
