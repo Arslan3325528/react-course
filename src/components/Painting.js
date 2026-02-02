@@ -10,7 +10,7 @@ export default function Painting({
 })
 // export default function Painting(props)
 {
-  // const { url, title, author, profileUrl, price } = props;
+  // const { url, title, author, profileUrl, price } = props; //! Деструктурізація
   return <div className="Card-painting">
     <img src={url} alt={title} width="480" />
     <h2>{title}</h2>

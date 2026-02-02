@@ -76,7 +76,7 @@ export default function App() {
         quantity={paintings[2].quantity}
       />
       {/* //? Planes */}
-      {/* <Planes
+      <Planes
         key={planes[1].id}
         urlMain={planes[1].url.main}
         urlPromotional={planes[1].url.promotional}
@@ -90,7 +90,7 @@ export default function App() {
         type={planes[1].info.type}
         price={planes[1].info.price}
         description={planes[1].info.description}
-      /> */}
+      />
     </div>
   );
 };

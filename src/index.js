@@ -273,14 +273,14 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //? Paintings
 //todo: var.1
 // root.render(<App />);
-//todo: var.2
 root.render(
   <React.StrictMode>
     <App />
+  {/* //todo: var.2 */}
   {/* <BrowserRouter basename="/react-course">
     <App />
   </BrowserRouter> */}
-  //todo: var.3
+  {/* //todo: var.3 */}
   {/* <HashRouter>
     <App />
   </HashRouter> */}
