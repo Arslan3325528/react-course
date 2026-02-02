@@ -149,7 +149,6 @@ import img3 from './images/planes-actual/f-22-comp.jpg';
 //   );
 // };
 
-
 //todo: var.2 "Колекції"
 export default function App() {
   return (
