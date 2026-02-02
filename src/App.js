@@ -27,6 +27,7 @@ import './App.css';
 
 //? Paintings
 import Painting from "./components/Painting";
+import PaintingList from './components/PaintingList';
 import paintings from './json/paintings.json';
 // console.log("Painting:", Painting);
 // console.log("paintings:", paintings);
@@ -149,26 +150,37 @@ import img3 from './images/planes-actual/f-22-comp.jpg';
 
 //? Paintings
 //todo: var.2 "Колекції"
+// export default function App() {
+//   return (
+//     <div>
+//       {/* [1,2,3,4,5]
+//       <br/>
+//       {[1, 2, 3, 4, 5]}
+//       <br />
+//       {[1, 2, 3, 4, 5].map(el => <div>{el}</div>)}
+//       <br /> */}
+//       {paintings.map(painting =>
+//         <Painting
+//           key={painting.id}
+//           url={painting.url}
+//           title={painting.title}
+//           author={painting.author.tag}
+//           profileUrl={painting.author.url}
+//           price={painting.price}
+//           quantity={painting.quantity}
+//         />
+//       )}
+//     </div>
+//   );
+// };
+
+
+//? Paintings
+//todo: var.2 "Колекції"
 export default function App() {
   return (
     <div>
-      {/* [1,2,3,4,5]
-      <br/>
-      {[1, 2, 3, 4, 5]}
-      <br />
-      {[1, 2, 3, 4, 5].map(el => <div>{el}</div>)}
-      <br /> */}
-      {paintings.map(painting =>
-        <Painting
-          key={painting.id}
-          url={painting.url}
-          title={painting.title}
-          author={painting.author.tag}
-          profileUrl={painting.author.url}
-          price={painting.price}
-          quantity={painting.quantity}
-        />
-      )}
+      <PaintingList items={paintings}/>
     </div>
   );
 };
