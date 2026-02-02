@@ -28,6 +28,6 @@ Painting.propTypes = {
   author: PropTypes.string.isRequired,
   profileUrl: PropTypes.string.isRequired,
   // price: PropTypes.number.isRequired,
-  price: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired, //! контроль propTypes
   quantity: PropTypes.number.isRequired,
 };
