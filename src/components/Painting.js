@@ -15,7 +15,7 @@ const Painting = ({
   // const { url, title, author, profileUrl, price } = props; //! Деструктурізація
   return <div className="Card-painting">
     <img src={url} alt={title} width="480" />
-    <h2>{title}</h2>
+    <h3>{title}</h3>
     <p>Автор: <a href={profileUrl}>{author}</a></p>
     <p>Цена: {price} кредитов</p>
     {/* <p>Доступность: заканчивается или есть в наличии</p> */}

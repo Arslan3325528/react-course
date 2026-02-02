@@ -1,42 +1,17 @@
-// import logo from './logo.svg';
 import './App.css';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
+import Section from './components/Section';
 //? Paintings
-import Painting from "./components/Painting";
 import PaintingList from './components/PaintingList';
+import Painting from "./components/Painting";
 import paintings from './json/paintings.json';
-// console.log("Painting:", Painting);
-// console.log("paintings:", paintings);
+
 
 //? Planes
+import PlanesList from './components/PlanesList';
 import Planes from "./components/Planes";
 import planes from './json/planes.json';
-// console.log("Planes:", Planes);
-// console.log("planes:", planes);
+
 
 //!💚 Для відображення локальних зображень з http://localhost:3001/react-course та https://arslan3325528.github.io/react-course/
 import img1 from './images/planes-actual/a-10.jpg';
@@ -175,12 +150,23 @@ import img3 from './images/planes-actual/f-22-comp.jpg';
 // };
 
 
-//? Paintings
 //todo: var.2 "Колекції"
 export default function App() {
   return (
     <div>
-      <PaintingList items={paintings}/>
+      {/* //? Paintings */}
+      {/* <Section title="Колекція картин">gdfgdfgfd</Section > */}
+      {/* <PaintingList items={paintings}/> */}
+      <Section title="Колекція картин">
+        <PaintingList items={paintings} />
+      </Section >
+
+      {/* <Section /> */}
+
+      {/* //? Planes */}
+      <Section title="Колекція моделей літаків">
+        <PlanesList items={planes} />
+      </Section >
     </div>
   );
 };

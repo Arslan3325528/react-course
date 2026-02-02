@@ -17,7 +17,7 @@ export default function Planes({
 })
 {
   return <div className="Card-planes">
-    <h2>{nameBrief}</h2>
+    <h3>{nameBrief}</h3>
     <img src={urlMain} alt={nameBrief} width="400" />
     <p>Повна назва: {nameFull}</p>
     <p>Тип: {type}</p>
