@@ -3,20 +3,20 @@ import './App.css';
 import Section from './components/Section';
 //? Paintings
 import PaintingList from './components/PaintingList';
-import Painting from "./components/Painting";
+// import Painting from "./components/Painting";
 import paintings from './json/paintings.json';
 
 
 //? Planes
 import PlanesList from './components/PlanesList';
-import Planes from "./components/Planes";
+// import Planes from "./components/Planes";
 import planes from './json/planes.json';
 
 
 //!💚 Для відображення локальних зображень з http://localhost:3001/react-course та https://arslan3325528.github.io/react-course/
-import img1 from './images/planes-actual/a-10.jpg';
-import img2 from './images/planes-actual/b-2-comp.jpg';
-import img3 from './images/planes-actual/f-22-comp.jpg';
+// import img1 from './images/planes-actual/a-10.jpg';
+// import img2 from './images/planes-actual/b-2-comp.jpg';
+// import img3 from './images/planes-actual/f-22-comp.jpg';
 
 
 //todo: var.1
