@@ -33,6 +33,7 @@ import App from './App';
 
 //! 1 - React-елементи
 // const element = React.createElement("div");
+//* document.createElement("div"); //* JS
 
 // const element = React.createElement("div", { a: 5, b: 10 }, "Привіт  світ!");
 
@@ -56,6 +57,7 @@ import App from './App';
 //! 2 - Рендер одного React-елемента
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(element);
+//* root.append(element) //* JS
 
 
 //! 3 - Рендер кількох React-елементів
