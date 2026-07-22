@@ -85,16 +85,17 @@ import App from './App';
 // const element = React.createElement("div", {
 //   a: 5,
 //   b: 10,
-//   children: "Привіт  світ!",
+//   children: "Привіт, світ!",
 // });
 
 // console.log("element:", element);
 
-// const jsxElement = <div>Привіт  світ</div>
+// const jsxElement = <div>Привіт, мій світ</div>
 // console.log("jsxElement:", jsxElement);
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(element);
+// // root.render(element);
+// root.render(jsxElement);
 
 
 //! 5 - Рендер Вкладених JSX-елементів (інтерполяція)
