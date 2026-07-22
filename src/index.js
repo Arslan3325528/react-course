@@ -55,6 +55,7 @@ import App from './App';
 
 
 //! 2 - Рендер одного React-елемента
+//? ReactDOM.createRoot(document.getElementById('root')).render(element);
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(element);
 //* root.append(element) //* JS
