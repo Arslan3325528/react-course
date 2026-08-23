@@ -24,6 +24,7 @@ export default function Planes({
     <p>Прізвисько: {nickname}</p>
     <p>Країна виробник: {country}</p>
     <p>Рік випуску: {year}</p>
+    <p>Актуальність: {year >= 2000 ? "сучасний" : "минуле століття"}</p>
     <p>Ціна: {price}</p>
     <p className="Card-planes-description">Опис: {description}</p>
     <p>Рекламна модель:</p>
