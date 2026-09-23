@@ -115,7 +115,7 @@ import App from './App';
 // root.render(element);
 
 
-//! 6.1 - Компонент `Painting`
+//! 6.1 - елемент `painting` 
 // * HTML-розмітка:
 // <div>
 //   <img src="" alt="" width="480" />
@@ -162,7 +162,7 @@ let data = {
   "quantity": 10
 };
 
-//! 6.2 - Компонент `Painting` з json
+//! 6.2 - елемент `painting` з json
 // data = paintings[0];
 // data = paintings[1];
 // data = paintings[2];
@@ -184,7 +184,7 @@ let data = {
 // root.render(painting);
 
 
-//! 6.3 - 3 Компонента `Painting` з json
+//! 6.3 - 3(три) елемента `painting` з json
 // const data1 = paintings[0];
 // const data2 = paintings[1];
 // const data3 = paintings[2];
