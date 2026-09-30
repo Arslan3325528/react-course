@@ -1,6 +1,15 @@
 import PropTypes from 'prop-types';
 import defaultImage from "./default.jpg" //! Дефолтне зображення
 
+
+//! Підстановка дефолтного зображення якщо url є, але шлях помилковий (від Антона)
+function onErrorImg(e) {
+  e.target.onError = null;
+  e.target.src = defaultImage;
+};
+
+
+// export default function Painting(props)
 // export default function Painting({
 const Painting = ({
   url = defaultImage, //! Дефолтне зображення
@@ -10,11 +19,12 @@ const Painting = ({
   price,
   quantity
 }) =>
-// export default function Painting(props)
 {
-  // const { url, title, author, profileUrl, price } = props; //! Деструктурізація
+  // const { url, title, author, profileUrl, price } = props; //! Деструктурізація props
   return <div className="Card-painting">
-    <img src={url} alt={title} width="480" />
+    {/* <img src={url} alt={title} width="480" /> */}
+    {/* //! Підстановка дефолтного зображення якщо url є, але шлях помилковий */}
+    <img src={url} alt={title} width="480" onError={(e) => onErrorImg(e)} /> 
     <h3>{title}</h3>
     <p>Автор: <a href={profileUrl}>{author}</a></p>
     <p>Цена: {price} кредитов</p>

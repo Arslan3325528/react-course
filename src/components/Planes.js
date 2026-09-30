@@ -2,6 +2,12 @@ import PropTypes from 'prop-types';
 import defaultImage from "./default.jpg" //! Дефолтне зображення
 
 
+//! Підстановка дефолтного зображення якщо url є, але шлях помилковий (від Антона)
+function onErrorImg(e) {
+  e.target.onError = null;
+  e.target.src = defaultImage;
+};
+
 export default function Planes({
   urlMain = defaultImage, //! Дефолтне зображення
   urlPromotional = defaultImage, //! Дефолтне зображення
@@ -18,7 +24,9 @@ export default function Planes({
 {
   return <div className="Card-planes">
     <h3>{nameBrief}</h3>
-    <img src={urlMain} alt={nameBrief} width="400" />
+    {/* <img src={urlMain} alt={nameBrief} width="400" /> */}
+    {/* //! Підстановка дефолтного зображення якщо url є, але шлях помилковий */}
+    <img src={urlMain} alt={nameBrief} width="400" onError={(e) => onErrorImg(e)} /> 
     <p>Повна назва: {nameFull}</p>
     <p>Тип: {type}</p>
     <p>Прізвисько: {nickname}</p>
